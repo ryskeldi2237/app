@@ -1,0 +1,8 @@
+export { default as Header } from './Header'
+export { default as Weather } from './Weather'
+export { default as Main } from './Main'
+export { default as Footer } from './Footer'
+export { default as NewsItem } from './NewsItem'
+export { default as Loading } from './Loading'
+export { default as ContactItem } from './ContactItem'
+export { default as PhotoItem } from './PhotoItem'
