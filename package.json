@@ -2,7 +2,7 @@
   "name": "weather-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ryskeldi2237.github.io/vertex",
+  "homepage": "https://ryskeldi2237.github.io/vertex/",
   "dependencies": {
     "cra-template": "1.1.2",
     "gh-pages": "^3.2.3",
