@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Main() {
+function Main({items}) {
     return (
         <main className="main-content">
 				<div className="fullwidth-block" data-bg-color="#262936">
@@ -66,15 +66,14 @@ function Main() {
 							<div className="col-md-4">
 								<h2 className="section-title">Awesome Photos</h2>
 								<div className="photo-grid">
-									<img src="assets/images/thumb-1.jpg" alt="#"></img>
-									<img src="assets/images/thumb-2.jpg" alt="#"></img>
-									<img src="assets/images/thumb-3.jpg" alt="#"></img>
-									<img src="assets/images/thumb-4.jpg" alt="#"></img>
-									<img src="assets/images/thumb-5.jpg" alt="#"></img>
-									<img src="assets/images/thumb-6.jpg" alt="#"></img>
-									<img src="assets/images/thumb-7.jpg" alt="#"></img>
-									<img src="assets/images/thumb-8.jpg" alt="#"></img>
-									<img src="assets/images/thumb-9.jpg" alt="#"></img>
+									{
+									items &&
+										items.map((item, i) => (
+											<a href={item.links.download} className="main-images" key={item+'_'+i}>
+												<img src={item.urls.regular} alt="#"></img>
+											</a>
+										))
+									}
 								</div>
 							</div>
 						</div>

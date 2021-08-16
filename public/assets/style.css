@@ -54,7 +54,9 @@ a {
     outline: thin dotted; }
   a:hover, a:active {
     outline: 0; }
-
+.fa,li{
+  cursor: pointer;
+}
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
@@ -279,6 +281,15 @@ outline: none; }
   display: flex;
   align-items: center;
 }
+.main-images{
+  width: 113px;
+  height: 80px;
+  display: block;
+  overflow: hidden;
+}
+.main-images img{
+  margin-top: 5px;
+}
 .contact-info div div{
   margin-right: 15px;
   display: flex;
@@ -325,6 +336,9 @@ outline: none; }
 .row {
   margin-left: -15px;
   margin-right: -15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   *zoom: 1; }
   .row:after {
     content: " ";
@@ -1456,7 +1470,7 @@ outline: none; }
     content: " ";
     width: 30px;
     height: 23px;
-    background: url(images/quote.png);
+    background: url('assets/images/quote.png');
     position: absolute;
     top: 0;
     left: 0; }
@@ -1466,28 +1480,35 @@ outline: none; }
     color: #009ad8; }
 
 .photo {
+  width: 555px;
+  height: 190px;
+  display: flex;
   position: relative;
   padding-left: 50%;
-  min-height: 190px;
   border-radius: 10px;
-  overflow: hidden;
   background: #262936;
   margin-bottom: 30px; }
   .photo .photo-preview {
+    width: 277.5px;
     position: absolute;
-    width: 50%;
     left: 0;
     top: 0;
     bottom: 0;
     background-size: cover; }
   .photo .photo-details {
+    width: 277.5px;
     padding: 20px; }
   .photo .photo-title {
     margin-bottom: 10px;
     font-weight: 300; }
     .photo .photo-title a {
       color: white; }
-
+      .photo-preview img{
+        width: 277.5px;
+        height: 190px;
+        overflow: hidden;
+      }
+      
 .star-rating {
   float: none;
   overflow: hidden;
@@ -1697,6 +1718,9 @@ outline: none; }
     font-size: 13px;
   }
   .forecast-container .forecast .forecast-content{
-    padding-top: 20px;
+    padding-top: 10px;
+  }
+  .forecast-container .forecast.today .forecast-content{
+    padding-top: 10px;
   }
 }

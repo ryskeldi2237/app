@@ -3,9 +3,7 @@ import {NewsItem} from '../components'
 
 function News() {
     return (
-        <main className='main-content'>
-            <NewsItem />
-        </main>
+        <NewsItem />
     )
 }
 

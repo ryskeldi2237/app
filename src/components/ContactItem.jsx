@@ -2,7 +2,8 @@ import React from 'react'
 
 function ContactItem() {
     return (
-        <div className="fullwidth-block">
+        <div className="main-content">
+            <div className="fullwidth-block">
                 <div className="container">
                     <div className="col-md-5">
                         <div className="contact-details">
@@ -12,20 +13,20 @@ function ContactItem() {
                             <div class="contact-info">
                                 <div>
                                     <img src="assets/images/icon-marker.png" alt="img"></img>
-                                    <p>Company Name INC. <br></br>
-                                    2803 Avenue Street, Los Angeles</p>
+                                    <p>Vertex <br></br>
+                                    Bishkek</p>
                                 </div>
                                 
                                 <div>
-                                    <div><img src="assets/images/icon-phone.png" alt="logo"></img>+1 800 314 235</div>
-                                    <div><img src="assets/images/icon-envelope.png" alt="logo"></img>contact@companyname.com</div>
+                                    <div><img src="assets/images/icon-phone.png" alt="logo"></img>+996553338878</div>
+                                    <div><img src="assets/images/icon-envelope.png" alt="logo"></img>ryskeldi2237@gmail.com</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="col-md-6 col-md-offset-1">
                         <h2 className="section-title">Contact us</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur inventore ducimus, facilis, numquam id soluta omnis eius recusandae nesciunt vero repellat harum cum. Nisi facilis odit hic, ipsum sed!</p>
+                        <p>Fill in the field, after sending, check the mail, spam</p>
                         <form action="#" className="contact-form">
                             <div className="row">
                                 <div className="col-md-6"><input type="text" placeholder="Your name..."></input></div>
@@ -40,10 +41,10 @@ function ContactItem() {
                                 <input type="submit" placeholder="Send message"></input>
                             </div>
                         </form>
-
                     </div>
                 </div>
             </div>
+        </div>
     )
 }
 

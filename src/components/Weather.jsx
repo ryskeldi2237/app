@@ -5,7 +5,7 @@ const api = {
     base : 'https://api.openweathermap.org/data/2.5/'
 }
 function Weather() {
-	const [value, setValue] = useState(null);
+	const [value, setValue] = useState('');
 	const [weather, setWeather] = useState(null);
 	const [nweather, setNweather] = useState(null);
 	const [city, setCity] = useState(null);
@@ -14,7 +14,6 @@ function Weather() {
 		const api_call = await fetch(`${api.base}forecast?q=${value}&lang=ru&units=metric&APPID=${api.key}`) 
 		const response = await api_call.json()
 		if(response.cod !== '404'){
-			console.log(response)
 			setCity(response)
 			const day = response.list.filter(reading => reading.dt_txt.includes("12:00:00"));
 			const night = response.list.filter(reading => reading.dt_txt.includes("00:00:00"));

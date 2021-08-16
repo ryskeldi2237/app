@@ -15,7 +15,8 @@ function NewsItem() {
         },450)
     },[])
     return (
-        <div className="fullwidth-block">
+        <div className="main-content">
+            <div className="fullwidth-block">
             <div className="container">
                 <div className="row">
                     <div className="content col-md-8">
@@ -35,7 +36,6 @@ function NewsItem() {
                                 })
                             :
                             Array(3).fill(<Loading/>)
-
                         }
                     </div>
                     <div className="sidebar col-md-3 col-md-offset-1">
@@ -76,6 +76,7 @@ function NewsItem() {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

@@ -8,14 +8,17 @@ function Header({items}) {
         <div>
 			<div className="site-header">
 				<div className="container">
-					<div className="branding">
-						<img src="assets/images/logo.png" alt="bg" className="logo"></img>
-						<div className="logo-type">
-							<h1 className="site-title">Company name</h1>
-							<small className="site-description">tagline goes here</small>
+				<Link to='/'>
+						<div className="branding" onClick={() => setActive('Home')}>
+							<img src="assets/images/logo.png" alt="bg" className="logo"></img>
+							
+								<div className="logo-type">
+									<h1 className="site-title">Vertex</h1>
+									<small className="site-description">tagline goes here</small>
+								</div>
+							
 						</div>
-					</div>
-
+					</Link>
 					<div className="main-navigation">
 						<button type="button" className="menu-toggle" onClick={() => setModal(!showModal)}><i className="fa fa-bars"></i></button>
 						<ul className="menu">
@@ -54,9 +57,9 @@ function Header({items}) {
 					<div class="container">
 						<div class="breadcrumb">
 							<Link to='/'>
-								<div>Home</div>
+								<div onClick={() => setActive('Home')}>Home</div>
 							</Link>
-							<Link to='/active'>
+							<Link to={`/${active.toLowerCase()}`}>
 								<span>{active}</span>
 							</Link>
 						</div>
