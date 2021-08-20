@@ -14,7 +14,7 @@ function Header({items}) {
 							
 								<div className="logo-type">
 									<h1 className="site-title">Vertex</h1>
-									<small className="site-description">tagline goes here</small>
+									<small className="site-description">achieved success with us</small>
 								</div>
 							
 						</div>
