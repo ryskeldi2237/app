@@ -16,7 +16,6 @@ function ContactItem() {
                                     <p>Vertex <br></br>
                                     Bishkek</p>
                                 </div>
-                                
                                 <div>
                                     <div><img src="assets/images/icon-phone.png" alt="logo"></img>+996553338878</div>
                                     <div><img src="assets/images/icon-envelope.png" alt="logo"></img>ryskeldi2237@gmail.com</div>

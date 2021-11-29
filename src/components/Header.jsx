@@ -31,7 +31,6 @@ function Header({items}) {
 						}
 						</ul>
 					</div>
-
 					{
 						showModal &&
 						<div class="mobile-navigation">
@@ -49,7 +48,6 @@ function Header({items}) {
 						</ul>
 						</div>
 					}
-
 				</div>
 			</div>
 			{
@@ -66,7 +64,6 @@ function Header({items}) {
 					</div>
 			}
 		</div>
-
     )
 }
 

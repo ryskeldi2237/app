@@ -4,15 +4,15 @@ import { Loading } from './index'
 function NewsItem() {
     const [news, setNews] = useState(null)
     const [load, setLoad] = useState(false)
-    useEffect(() => {
-        setTimeout(async () => {
-            const data = await fetch('http://newsapi.org/v2/top-headlines?country=us&apikey=5bc8cf8d7bd44e9b8efab6722f5a0747')
-            const response = await data.json()
-            setNews(response)
+    useEffect( async() => {
+        const data = await fetch('http://newsapi.org/v2/top-headlines?country=us&apikey=5bc8cf8d7bd44e9b8efab6722f5a0747')
+        const response = await data.json()
+        setNews(response)
+        setTimeout(() => {
             if(response){
                 setLoad(true)
             }
-        },450)
+        },600)
     },[])
     return (
         <div className="main-content">

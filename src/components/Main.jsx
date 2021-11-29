@@ -30,7 +30,6 @@ function Main({items}) {
 						</div>
 					</div>
 				</div>
-
 				<div className="fullwidth-block">
 					<div className="container">
 						<div className="row">
@@ -82,5 +81,4 @@ function Main({items}) {
 			</main>
     )
 }
-
 export default Main

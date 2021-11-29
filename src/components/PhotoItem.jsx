@@ -18,5 +18,4 @@ function PhotoItem({items}) {
         </div>
     )
 }
-
 export default PhotoItem
