@@ -1,22 +1,23 @@
-import React from 'react'
-import {Route, Switch} from 'react-router-dom'
-import { Header, Footer } from './components'
-import {Home, News, Photos, Contact} from './pages'
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Header, Footer } from "./components";
+import { Home, News, Photos, Contact } from "./pages";
 
 function App() {
-  
   return (
-    <div class="site-content">
-    <Header items={['Home', 'News', 'Photos', 'Contact']}/>
-    <Switch>
-      <Route exact path='/' render={() => <Home/>}/>
-      <Route exact path='/news' render={() => <News/>}/>
-      <Route exact path='/photos' render={() => <Photos/>}/>
-      <Route exact path='/contact' render={() => <Contact/>}/>
-    </Switch>
-    <Footer />
-</div>
-  )
+    <div className="site-content">
+      <Router>
+        <Header items={["Home", "News", "Photos", "Contact"]} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/photos" element={<Photos />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </div>
+  );
 }
 
-export default App
+export default App;

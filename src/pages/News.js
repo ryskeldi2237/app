@@ -1,10 +1,8 @@
-import React from 'react'
-import {NewsItem} from '../components'
+import React from "react";
+import { NewsItem } from "../components";
 
 function News() {
-    return (
-        <NewsItem />
-    )
+  return <NewsItem />;
 }
 
-export default News
+export default News;

@@ -1,12 +1,3 @@
-/*!
- * Project_Name: Weather
- * Author: Themezy
- * Email: contact[at]themezy.com
- * Url: http://www.themezy.com
- */
-/*=========================================== 
- * Importing CSS Libraries
- *===========================================*/
 article,
 aside,
 details,
@@ -303,7 +294,8 @@ outline: none; }
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  *zoom: 1; }
+  /* *zoom: 1; */
+ }
   .container:after {
     content: " ";
     clear: both;
@@ -325,7 +317,8 @@ outline: none; }
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  *zoom: 1; }
+  /* *zoom: 1; */
+ }
   .container-fluid:after {
     content: " ";
     clear: both;
@@ -339,7 +332,8 @@ outline: none; }
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  *zoom: 1; }
+  /* *zoom: 1;  */
+}
   .row:after {
     content: " ";
     clear: both;
@@ -1192,7 +1186,8 @@ margin: 0 auto; }
   .main-navigation .menu {
     list-style: none;
     display: inline-block;
-    *zoom: 1; }
+    /* *zoom: 1;  */
+  }
     .main-navigation .menu:after {
       content: " ";
       clear: both;
@@ -1285,8 +1280,9 @@ margin: 0 auto; }
         float: left; } }
     .forecast-container .forecast.today {
       width: 420px; }
-      .forecast-container .forecast.today .forecast-header {
-        *zoom: 1; }
+      /* .forecast-container .forecast.today .forecast-header {
+        *zoom: 1;
+       } */
         .forecast-container .forecast.today .forecast-header:after {
           content: " ";
           clear: both;
